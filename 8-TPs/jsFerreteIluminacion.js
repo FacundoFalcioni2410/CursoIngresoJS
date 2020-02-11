@@ -10,5 +10,74 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+	var lamparita;
+	var precioLamparita;
+	var precioFinalLamparita;
+	var marca;
+	var impuesto;
+
+	lamparita=document.getElementById('Cantidad').value;
+	lamparita=parseInt(lamparita);
+	precioLamparita=35*lamparita;
+	precioLamparita=parseInt(precioLamparita);
+	marca=document.getElementById('Marca').value;
+	
+	if(lamparita>5)
+	{
+		precioFinalLamparita=precioLamparita/2;
+		document.getElementById('precioDescuento').value=precioFinalLamparita;
+	}
+			if(lamparita==5 && marca=="ArgentinaLuz")
+			{
+				precioFinalLamparita=precioLamparita-precioLamparita*descuentoDel40;
+				document.getElementById('precioDescuento').value=precioFinalLamparita;	
+			}
+				else if(lamparita==5 && marca!="ArgentinaLuz")
+				{
+					precioLamparita=precioLamparita-precioLamparita*descuentoDel30;
+					document.getElementById('precioDescuento').value=precioFinalLamparita;
+				}
+						if(lamparita==4)
+						{
+								if(marca="ArgentinaLuz")
+								{
+									precioFinalLamparita=precioLamparita-precioLamparita*25/100;
+									document.getElementById('precioDescuento').value=precioFinalLamparita;
+								}
+								else if(marca="“FelipeLamparas”")
+								{
+									precioFinalLamparita=precioLamparita-precioLamparita*25/100;
+									document.getElementById('precioDescuento').value=precioFinalLamparita;
+								}
+								else
+								{
+									precioFinalLamparita=precioLamparita-precioLamparita*20/100;
+									document.getElementById('precioDescuento').value=precioFinalLamparita;
+								}
+						}
+								if(lamparita==3)
+								{
+									if(marca="ArgentinaLuz")
+									{
+										precioFinalLamparita=precioLamparita-precioLamparita*20/100;
+										document.getElementById('precioDescuento').value=precioFinalLamparita;	
+									}
+									else if(marca="FelipeLampara")
+									{
+										precioFinalLamparita=precioLamparita-precioLamparita*15/100;
+										document.getElementById('precioDescuento').value=precioFinalLamparita;
+									}
+									else
+									{
+										precioFinalLamparita=precioLamparita-precioLamparita*5/100;
+										document.getElementById('precioDescuento').value=precioFinalLamparita;
+									}
+								}
+										if(precioFinalLamparita>119)
+										{
+											impuesto=precioFinalLamparita*10/100;
+											precioFinalLamparita=precioLamparita+precioLamparita*10/100;
+											document.getElementById('precioDescuento').value=precioFinalLamparita;
+											alert("Usted pago "+impuesto+" de IIBB: ");
+										}
 }
