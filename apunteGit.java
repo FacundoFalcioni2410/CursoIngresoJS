@@ -8,3 +8,5 @@ git commit -m "mensaje" //crea un commit para el archivo guardado
 
 git config --global user.email "mail" //iniciar sesion
 git config --global user.name "nombre"
+
+git push //cuando esta todo guardado (utiliza internet)
