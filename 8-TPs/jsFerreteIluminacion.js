@@ -75,7 +75,7 @@ function CalcularPrecio ()
 
 
 
-
+ 	/*
 	if(cantidadDeLamparas>5)
 	{
 		descuento=50;
@@ -132,8 +132,8 @@ function CalcularPrecio ()
 	}//if(cantidadDeLamparas>5)
 	
 
-
-
+	*/
+	
 	precioConDescuento=precioBruto-precioBruto*descuento/100;
 	console.info("Precio con descuento: ",precioConDescuento);
 	document.getElementById('precioDescuento').value=precioConDescuento;
