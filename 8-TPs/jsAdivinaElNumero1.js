@@ -9,6 +9,10 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 */
 var numeroSecreto; 
 var contadorIntentos;
+var contador;
+
+contador=0
+contador=parseInt(contador);
 
 function comenzar()
 {
@@ -21,12 +25,11 @@ function comenzar()
 function verificar()
 {
 	var ingresado;
-	var contador;
+
 
 	ingresado=document.getElementById('numero').value;
 	ingresado=parseInt(ingresado);
-	contador=0;
-	contador=parseInt(contador);
+
 
 	if(ingresado==numeroSecreto)
 	{
@@ -47,4 +50,5 @@ function verificar()
 	}
 
 	document.getElementById('intentos').value=contador;
+	console.log(contador);
 }
