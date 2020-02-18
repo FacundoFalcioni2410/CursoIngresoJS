@@ -1,5 +1,5 @@
 
 function mostrar()
 {
-
+	alert("hola");
 }
