@@ -19,36 +19,33 @@ function comenzar()
 	numeroSecreto=Math.floor(Math.random()*100)+1;
 	numeroSecreto=parseInt(numeroSecreto);
 	
-	console.log(numeroSecreto);
+	console.info("El número a adivinar es: ",numeroSecreto);
 }
 
 function verificar()
 {
 	var ingresado;
 
-
 	ingresado=document.getElementById('numero').value;
 	ingresado=parseInt(ingresado);
-
+	contador=contador+1;
 
 	if(ingresado==numeroSecreto)
 	{
-		alert("Ganaste");
+		alert("Ganaste en solo: "+contador);
 	}
 	else
 	{
 		if(ingresado>numeroSecreto)
 		{
 			alert("Te pasaste");
-			contador=contador+1;
 		}
 		else
 		{
 			alert("Te falta");
-			contador=contador+1;
 		}
 	}
 
 	document.getElementById('intentos').value=contador;
-	console.log(contador);
+	console.info("Numero de intentos: ",contador);
 }
