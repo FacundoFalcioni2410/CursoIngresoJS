@@ -1,10 +1,10 @@
 function mostrar()
 {
 	var laHora;
-	
+
 	laHora=document.getElementById('laHora').value;
 	laHora=parseInt(laHora);
-
+	
 	switch(laHora)
 	{
 		case 6:
@@ -40,6 +40,9 @@ function mostrar()
 			{
 				alert("a dormir");
 			}
+			break;
+		default:
+			alert("La hora no es valida");
 			break;
 	}
 }

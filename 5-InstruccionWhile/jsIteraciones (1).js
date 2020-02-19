@@ -3,15 +3,20 @@ function mostrar()
 	/*while(   )
 	ejecuta la linea y vuelve a evaluar
 	tiene que modificar su condicion, sino se repite constantemente
+	-las variables tienen que tener un valor correcto-
+	-inicializar en 0, poner el maximo en el while-
+	-siempre mostrar abajo-
+	
+	
+	
 	*/
-	var numero;
+	var contador;
 
-	numero=1;
-	numero=parseInt(numero);
-	while(numero<11)
+	contador=0;
+	
+	while(contador<10)
 	{
-		console.info("Numero: "+numero);
-		numero=numero+1;
-		
+		contador=contador+1;
+		console.info("Numero: "+contador);	
 	}
 }//FIN DE LA FUNCIÓN
