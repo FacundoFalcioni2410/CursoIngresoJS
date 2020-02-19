@@ -7,6 +7,7 @@ function mostrar()
 	var negativo;
 	var multiplicacion;
 	var respuesta;
+	var numeroIngresado;
 
 	acumulador=0
 	multiplicacion=0;
@@ -15,13 +16,15 @@ function mostrar()
 
 	while(respuesta=="si")
 	{
-		positivo=prompt("Ingrese un numero");
-		positivo=parseInt(positivo);
-		acumulador=acumulador+positivo;
-		multiplicacion=negativo*multiplicacion
-		contador=contador+1;
+		numeroIngresado=prompt("Ingrese un numero");
+		numeroIngresado=parseInt(numeroIngresado);
+		if(numeroIngresado<0)
+		{
+			negativo=numeroIngresado
+		}
 		respuesta=prompt("¿Desea continuar?, de ser asi ingrese 'si'");
 	}
+
 	document.getElementById('suma').value=positivo;
 	document.getElementById('producto').value=negativo;
 }//FIN DE LA FUNCIÓN
