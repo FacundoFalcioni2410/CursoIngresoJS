@@ -1,9 +1,9 @@
 function mostrar()
 {
-	var contador;
+	var i;
 
-	for(contador=10; contador>0; contador=contador-1)
+	for(i=10; i>0; i--)
 	{
-		document.write(contador);
+		document.write("<br> algo <br>");
 	}
 }

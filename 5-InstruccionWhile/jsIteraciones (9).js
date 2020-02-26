@@ -10,7 +10,7 @@ function mostrar()
 	contador=0;
 	respuesta="si";
 
-	while(respuesta!='no' || isNaN(numeroIngresado))
+	do
 	{
 		contador=contador+1
 		numeroIngresado=prompt("Ingrese un numero");
@@ -33,7 +33,8 @@ function mostrar()
 		}
 		
 		respuesta=prompt("Ingrese 'no' para salir");
-	}
+	}while(respuesta!="no" || isNaN(numeroIngresado));
+	
 		document.getElementById('maximo').value=maximo;
-		document.getElementById('minimo').value=minimo
+		document.getElementById('minimo').value=minimo;
 }//FIN DE LA FUNCIÓN

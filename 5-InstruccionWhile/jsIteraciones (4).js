@@ -7,10 +7,10 @@ function mostrar()
 	numero=prompt("ingrese un número entre 0 y 10.");
 	// valorDeVerdad=isNaN(numero);
 
-	while(isNaN(numero) || numero<0 || numero>10)
+	do
 	{
 		numero=prompt("ingrese un número entre 0 y 10.");
 		numero=parseInt(numero);
-	}
+	}while(isNaN(numero) || numero<0 || numero>10);
 	document.getElementById('Numero').value=numero;
 }//FIN DE LA FUNCIÓN

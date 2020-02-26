@@ -14,9 +14,9 @@ function mostrar()
 
 	contador=0;
 	
-	while(contador<10)
+	do
 	{
 		contador=contador+1;
 		console.info("Numero: "+contador);	
-	}
+	}while(contador<10);
 }//FIN DE LA FUNCIÓN

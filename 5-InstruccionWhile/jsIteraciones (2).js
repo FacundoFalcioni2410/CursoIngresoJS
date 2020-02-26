@@ -4,9 +4,9 @@ function mostrar()
 
 	numero=10;
 	
-	while(numero>0)
+	do
 	{
 		console.info("Numero: "+numero);
 		numero=numero-1;
-	}
+	}while(numero>0);
 }//FIN DE LA FUNCIÓN

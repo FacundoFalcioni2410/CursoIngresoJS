@@ -14,7 +14,7 @@ function mostrar()
 	contador=0;
 	respuesta="si";
 
-	while(respuesta=="si")
+	do
 	{
 		numeroIngresado=prompt("Ingrese un numero");
 		numeroIngresado=parseInt(numeroIngresado);
@@ -23,7 +23,7 @@ function mostrar()
 			negativo=numeroIngresado
 		}
 		respuesta=prompt("¿Desea continuar?, de ser asi ingrese 'si'");
-	}
+	}while(respuesta=="si");
 
 	document.getElementById('suma').value=positivo;
 	document.getElementById('producto').value=negativo;

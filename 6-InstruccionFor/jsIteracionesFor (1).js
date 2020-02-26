@@ -1,9 +1,10 @@
 function mostrar()
+// i= iteracion
 {
-	var contador;
+	var i;
 
-	for(contador=1; contador<11; contador=contador+1)
+	for(i=0;i<10;i++)
 	{
-		document.write(contador);
+		console.info("For: ",i);
 	}
 }
