@@ -22,7 +22,7 @@ function mostrar()
 	var promedioNotasMenores;
 	var promedioNotasAdolescentes;
 
-	respuesta="Si"
+	respuesta="Si";
 	cantidadVaronesAprobados=0;
 	contadorMasculino=0;
 	contadorFemenino=0;
@@ -119,6 +119,6 @@ function mostrar()
 	document.write("<br>El promedio total de las notas finales de los varones es: "+promedioNotasFinalesMasculino);
 	document.write("<br>El promedio total de las notas finales de las mujeres es: "+promedioNotasFinalesFemenino);
 	document.write("<br>El promedio total de las notas finales de los adolescentes es: "+promedioNotasAdolescentes);
-	document.write("<br>El promedio total de las notas finales de los mayores es: "+promedioNotasMayores;
+	document.write("<br>El promedio total de las notas finales de los mayores es: "+promedioNotasMayores);
 	document.write("<br>El promedio total de las notas finales de las menores es: "+promedioNotasMenores);
 }
